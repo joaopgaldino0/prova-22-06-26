@@ -1,0 +1,27 @@
+### Listar
+GET http://localhost:5076/api/livro/listar
+
+### Cadastrar
+POST http://localhost:5076/api/livro/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Teste",
+    "autor" : "Testador",
+    "preco" : 100
+}
+
+### Emprestar
+PUT http://localhost:5076/api/livro/emprestar/2
+
+### Devolver
+PUT http://localhost:5076/api/livro/devolver/
+
+### Disponíveis
+GET http://localhost:5076/api/livro/disponiveis
+
+### Emprestados
+GET http://localhost:5076/api/livro/emprestados
+
+### Mais emprestados
+GET http://localhost:5076/api/livro/maisemprestado
